@@ -4,22 +4,22 @@
 
 ## .docx Preparation
 
-The structure of .docx and HTML is quite different, so only particular Word paragraph and character styles can be converted by default. The demo file `mammoth-demo.docx` included in this repository utilizes some core Word styles and a number of custom styles for block quotes and captions. Refer to the full [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for details on how Mammoth can be further configured. 
+The structure of .docx and HTML are quite different, so only particular Word paragraph and character styles can be converted by default. The demo file `mammoth-demo.docx` included in this repository utilizes some core Word styles and a number of custom styles for block quotes, captions and so forth. Refer to the full [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for details on how Mammoth can be further customised. 
 
 ### Core .docx styles
 The following default Word styles are automatically converted into HTML equivalents: Headings 1 to 6, Paragraphs, Line breaks, Lists, Hyperlinks, Tables, Footnotes and Text styles including Bold, Italic, Underline, Strikethrough, Superscript, Subscript.  
 
 ### Blockquotes
-Blockquotes require that a custom Word paragraph style `Quote` is applied to text. This is then converted into the following HTML `<blockquote class="quote">Test Here</blockquote>`
+Blockquotes require that a custom Word paragraph style `Quote` is applied to text. This is then converted into the following HTML `<blockquote class="quote">`Text Here`</blockquote>`
 
 ### Captions
-Captions require that a custom Word paragraph style `imageCaption` is applied to text. This is then converted into the following HTML `<figcaption class="imageCaption">Text Here</figcaption>`
+Captions require that a custom Word paragraph style `imageCaption` is applied to text. This is then converted into the following HTML `<figcaption class="imageCaption">`Text Here`</figcaption>`
 
 ### Bibliography or References
 Biblographic elements require a custom Word paragraph style `bibloReference` to be applied to appropriate footer text, this creates an indented effect in the final document. Note the reference links themselves can convert unreliably within Mammoth, so they may need to be checked and added manually.
 
 ### Copyright Notice
-Copyright notice requires that a custom Word paragraph style `copyrightMeta` is applied to appropriate text. Javascript within the HTML file automatically moves this text to the base of the HTML file. The converted HTML appears in the following format `<div class="copyrightMetaFooter"><p class="copyrightMeta">Text Here</p></div>`
+The copyright notice requires that a custom Word paragraph style `copyrightMeta` is applied to appropriate text. Javascript within the HTML file automatically moves this text to the base of the HTML file. The converted HTML appears in the following format `<div class="copyrightMetaFooter"><p class="copyrightMeta">`Text Here`</p></div>`
 
 ### Tables
 Mammoth supports basic tables and merged table cells in both horizontal and vertical axis. Table headings should use the standard Word heading styles. Table captions should use the above `imageCaption` style. 
@@ -32,10 +32,10 @@ This repository contains two files `header.htm` and `footer.htm` that can be ada
 The output HTML uses free open-source [Google Fonts](https://fonts.google.com) 
 
 ### Tables
-A wrapper tag is automatically added around tables, which facilitates horizontal scrolling on small devices `<div class="tableWrap"><table>Table Content</table></div>` 
+A wrapper tag is automatically added around tables, which facilitates horizontal scrolling on small devices `<div class="tableWrap"><table>`Table Content`</table></div>` 
 The css features styles for table headers, however some must be added manually to the output HTML files: 
-* To add a table header. Wrap the table row in the following HTML `<thead><tr>table header content here</tr></thead>`
-* To add a 'zebra striped table' effect. Wrap the table body in the following HTML `<tbody class="zebraTable"><tr>table body content here</tr></tbody>`
+* To add a table header. Wrap the table row in the following HTML `<thead><tr>`Table header content here`</tr></thead>`
+* To add a 'zebra striped table' effect. Wrap the table body in the following HTML `<tbody class="zebraTable"><tr>`Table body content here`</tr></tbody>`
 
 ### Images   
 Images are directly embedded into the html document. It is possible within Mammoth to save them externally, refer to the full [documentation](https://github.com/mwilliamson/python-mammoth) for details.
