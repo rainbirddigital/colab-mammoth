@@ -46,12 +46,18 @@ Footnotes automatically appear at the base of the HTML file
 
 ### Ordered Lists
 Ordered lists that require special numbering formats (Not 1, 2, 3), require the manual addition of the following CSS styles to the lists `<ol>` tag:
-* 1. 2. 3. 4. etc is the default behavior of <ol>
-* i. ii. iii. etc = `<ol class="listLowerRoman><li>`List Content`</li></ul>`
-* I. II. III. etc = `<ol class="listUpperRoman><li>`List Content`</li></ul>`
-* a. b. c. etc = `<ol class="listLowerLatin><li>`List Content`</li></ul>`
-* A. B. C. etc = `<ol class="listUpperLatin><li>`List Content`</li></ul>`
-* No bullets = `<ol class="listNone><li>`List Content`</li></ul>`
+
+1. 2. 3. 4. etc is the default behavior of `<ol>`
+
+i. ii. iii. etc = `<ol class="listLowerRoman><li>`List Content`</li></ul>`
+
+I. II. III. etc = `<ol class="listUpperRoman><li>`List Content`</li></ul>`
+
+a. b. c. etc = `<ol class="listLowerLatin><li>`List Content`</li></ul>`
+
+A. B. C. etc = `<ol class="listUpperLatin><li>`List Content`</li></ul>`
+
+No bullets = `<ol class="listNone><li>`List Content`</li></ul>`
 
 ## The Colab Export Process
 Open the link below or copy the file `Mammoth.word-docx-to-html-github.ipynb` from the repository to your Google Drive and open in [Google Colab](https://colab.research.google.com). Follow the notebook instructions to complete the conversion process.
