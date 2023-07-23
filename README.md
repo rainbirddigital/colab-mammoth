@@ -59,7 +59,7 @@ Ordered lists that require special numbering formats, not `1. 2. 3. 4.`, require
 
 ---
 
-## The Colab Export Process
+## Google Colab Conversion and Export
 Open the link below or copy the file `Mammoth.word-docx-to-html-github.ipynb` from the repository to your Google Drive and open in [Google Colab](https://colab.research.google.com). Follow the notebook instructions to complete the conversion process.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ma_-5nClXoDsH65vPX3eL0ERwcTezJFo?usp=sharing)
