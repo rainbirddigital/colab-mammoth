@@ -4,6 +4,7 @@
 
 ---
 
+
 ## .docx Preparation
 
 The structure of .docx and HTML are quite different, so only particular Word paragraph and character styles can be converted by default. The demo file `mammoth-demo.docx` included in this repository utilizes some core Word styles and a number of custom styles for block quotes, captions and so forth. Refer to the full [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for details on how Mammoth can be further customised. 
@@ -27,6 +28,7 @@ The copyright notice requires that a custom Word paragraph style `copyrightMeta`
 Mammoth supports basic tables and merged table cells in both horizontal and vertical axis. Table headings should use the standard Word heading styles. Table captions should use the above `imageCaption` style. 
 
 ---
+
 
 ## HTML Preparation and Output
 
@@ -58,6 +60,7 @@ Ordered lists that require special numbering formats, not `1. 2. 3. 4.`, require
 * `No bullets` = `<ol class="listNone><li>`List Here`</li></ol>`
 
 ---
+
 
 ## The Colab Export Process
 Open the link below or copy the file `Mammoth.word-docx-to-html-github.ipynb` from the repository to your Google Drive and open in [Google Colab](https://colab.research.google.com). Follow the notebook instructions to complete the conversion process.
