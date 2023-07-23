@@ -68,6 +68,6 @@ Open the link below or copy the file `Mammoth.word-docx-to-html-github.ipynb` fr
 
 ## Creating Custom Styles (Advanced)
 Follow this process to map new custom styles:
-* In the .docx file create a custom paragraph style, name it with a unique `customStyleName` and apply the style to text.
-* Open the Colab file and select the code immediately below `4. Convert .docx to .html`, within the editor, new styles can be declared below the comment `# Map custom styles here` Refer to the [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for style details.
+* In the .docx file create a custom paragraph style, name it with a unique `customName` and apply the style to text.
+* Open the Colab file and select the code immediately below `4. Convert .docx to .html` Within the editor new styles can be declared below the comment `# Map custom styles here` Refer to the [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for full details.
 * Add CSS styles for the new element in the `header.htm` file.
