@@ -2,6 +2,7 @@
 
 [Mammoth](https://github.com/mwilliamson/python-mammoth) converts .docx documents into a semantic HTML. This [Google Colab](https://colab.research.google.com) implementation utilizes Mammoth and additionally adds a responsive header and footer to each of the exported HTMl files. This process requires some basic knowledge of Word or similar open-source alternatives such as [OnlyOffice](https://www.onlyoffice.com), HTML/CSS and a free [Google Drive](https://drive.google.com) account.
 
+
 ---
 
 
@@ -26,6 +27,7 @@ The copyright notice requires that a custom Word paragraph style `copyrightMeta`
 
 ### Tables
 Mammoth supports basic tables and merged table cells in both horizontal and vertical axis. Table headings should use the standard Word heading styles. Table captions should use the above `imageCaption` style. 
+
 
 ---
 
@@ -58,6 +60,7 @@ Ordered lists that require special numbering formats, not `1. 2. 3. 4.`, require
 * `a. b. c.` = `<ol class="listLowerLatin><li>`List Here`</li></ol>`
 * `A. B. C.` = `<ol class="listUpperLatin><li>`List Here`</li></ol>`
 * `No bullets` = `<ol class="listNone><li>`List Here`</li></ol>`
+
 
 ---
 
