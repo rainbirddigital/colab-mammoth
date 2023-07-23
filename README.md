@@ -2,6 +2,8 @@
 
 [Mammoth](https://github.com/mwilliamson/python-mammoth) converts .docx documents into a semantic HTML. This [Google Colab](https://colab.research.google.com) implementation utilizes Mammoth and additionally adds a responsive header and footer to each of the exported HTMl files. This process requires some basic knowledge of Word or similar open-source alternatives such as [OnlyOffice](https://www.onlyoffice.com), HTML/CSS and a free [Google Drive](https://drive.google.com) account.
 
+---
+
 ## .docx Preparation
 
 The structure of .docx and HTML are quite different, so only particular Word paragraph and character styles can be converted by default. The demo file `mammoth-demo.docx` included in this repository utilizes some core Word styles and a number of custom styles for block quotes, captions and so forth. Refer to the full [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for details on how Mammoth can be further customised. 
@@ -24,6 +26,8 @@ The copyright notice requires that a custom Word paragraph style `copyrightMeta`
 ### Tables
 Mammoth supports basic tables and merged table cells in both horizontal and vertical axis. Table headings should use the standard Word heading styles. Table captions should use the above `imageCaption` style. 
 
+---
+
 ## HTML Preparation and Output
 
 This repository contains two files `header.htm` and `footer.htm` that can be adapted to alter the presentation of the output HTML files. The header file `header.htm` contains inline CSS that controls the layout, fonts, colors and text sizes of all elements, alongside some custom styles that can be applied manually to the exported files to improve the layouts. 
@@ -45,13 +49,15 @@ Images are directly embedded into the html document. It is possible within Mammo
 Footnotes automatically appear at the base of the HTML file
 
 ### Ordered Lists
-Ordered lists that require special numbering formats (Not 1, 2, 3), require the manual addition of the following CSS styles to the lists `<ol>` tag:
-* `1. 2. 3. 4.` is the default behavior of `<ol></ol>`
+Ordered lists that require special numbering formats, not `1. 2. 3. 4.`, require the manual addition of the following CSS styles to a lists `<ol>` tag:
+* `1. 2. 3. 4.` is the default behavior of `<ol>`List Here`</ol>`
 * `i. ii. iii.` = `<ol class="listLowerRoman><li>`List Here`</li></ol>`
 * `I. II. III.` = `<ol class="listUpperRoman><li>`List Here`</li></ol>`
 * `a. b. c.` = `<ol class="listLowerLatin><li>`List Here`</li></ol>`
 * `A. B. C.` = `<ol class="listUpperLatin><li>`List Here`</li></ol>`
 * `No bullets` = `<ol class="listNone><li>`List Here`</li></ol>`
+
+---
 
 ## The Colab Export Process
 Open the link below or copy the file `Mammoth.word-docx-to-html-github.ipynb` from the repository to your Google Drive and open in [Google Colab](https://colab.research.google.com). Follow the notebook instructions to complete the conversion process.
