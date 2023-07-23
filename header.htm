@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mammoth Word to HTML Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta name="description" content="Mammoth Word to HTML Demo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?v=3.1.2.4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        .iframeWrapper { margin: 0 auto; max-width: 860px; }
+        .iframeContent { padding: 140px 30px 90px; } 
+        .iframeContent xmp {display: inline;  }
+        body {background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='70' width='100%25'%3E%3Crect width='100%25' height='70' style='fill:rgb(235,102,91)'%3E%3C/rect%3E%3C/svg%3E") top right repeat-x; padding:0; margin:0; background-size: 100% 70px; }
+        .iframeHeader { width: 90%; height: 70px; text-align: left; padding-left: 20px; display: flex;  flex-direction: column; flex-wrap: nowrap; justify-content: center;  align-content: flex-start; align-items: flex-start; }
+        .iframeHeader h6 { font-family: 'Poppins', sans-serif; color: #FFF; font-weight: 300; font-size: 28px; line-height: 28px; padding:0; margin:0;   }
+        .iframeContent img { width: 100%; height: auto;}
+        body .iframeContent, .iframeContent p, .iframeContent h1, .iframeContent h2, .iframeContent h3, .iframeContent h4, .iframeContent  li, .iframeContent p a { font-family: 'Poppins', sans-serif; color: #333333; font-size: 14px; line-height: 25px; }
+        .iframeContent p { line-height: 25px; margin: 20px 0; }
+        .iframeContent h1 { font-size: 32px;  font-weight: 700; color: #eb665b; line-height: 42px; text-align: center;  margin-bottom: 40px;}
+        .iframeContent h2 { font-size: 24px;  font-weight: 700; color:#eb665b; line-height: 32px; margin: 40px 0 20px;}
+        .iframeContent h3 { font-size: 18px;  font-weight: 700; color:#eb665b;   text-transform: capitalize; line-height: 26px; margin: 40px 0 20px; }
+        .iframeContent h4 { font-size: 16px;  font-weight: 700; color:#333;  line-height: 24px; margin: 40px 0 20px;}
+        .iframeContent h5 { font-size: 16px;  font-weight: 700; color:#333;  line-height: 24px; margin: 40px 0 20px;}
+        .iframeContent h6 { font-size: 14px; font-weight: 700; color: #333; line-height: 18px; margin: 40px 0 20px; }
+        .iframeContent .imageCaption { font-size: 12px; font-weight: 400; color: #333; line-height: 18px; margin: 5px 0 30px; }
+        .iframeContent .tableText { font-size: 12px; font-weight: 400; color: #333; line-height: 18px; }
+        .iframeContent a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; color: #eb665b !important; }
+        .iframeContent a:link, .iframeContent a:visited, .iframeContent a:hover, .iframeContent a:active, .iframeContent a:focus { color: #eb665b !important;   }
+        .iframeContent a:hover { color: #333;  }
+        .iframeContent ul, .iframeContent ol  { margin: 20px 0; padding:0; }
+        .iframeContent ul p , .iframeContent ol p  { margin:0; padding:0; display: inline; }
+        .iframeContent ul  { list-style-position: inside; }
+        .iframeContent ul ul, .iframeContent ol ol, .iframeContent ol ul, .iframeContent ul ol  { padding-left:32px; margin:0;  }
+        .iframeContent ol  { list-style-position: inside }
+        .iframeContent li { margin-bottom: 6px;}
+        .iframeContent blockquote, .iframeContent p.blockquote  { margin: 40px 0px 40px 20px; border-left: 6px solid #eb665b; padding-left: 14px; }
+        .iframeContent sup, .iframeContent sup a { text-decoration: none;  font-size: 12px; line-height: 0px;}
+        .iframeContent sup a:hover { text-decoration: underline;}
+        .iframeContent sup a:link, .iframeContent sup a:visited, .iframeContent sup a:hover, .iframeContent sup a:active, .iframeContent sup a:focus { font-size: 12px; }
+        .sourceSans { font-family: 'Source Sans Pro', sans-serif;}
+        .headerAuthors { margin-bottom: 80px; display: flex; }
+        .headerAuthors p { text-align: center; font-size: 14px; line-height: 26px;  flex-grow:1; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-content: space-between; align-items: flex-start; padding:0 10px; }
+        .tableWrap {overflow: auto; overflow-y: hidden;}
+        table, caption, tbody, tfoot, thead, tr, th, td, .iframeContent table td p  { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; text-align: left; }
+        table {min-width:100%; border-collapse: collapse; border-spacing: 0;margin-bottom: 20px; }
+        table td, table tr, table th { padding:6px; }
+        table th { background-color: #eeeeee; font-weight: 700; }
+        table tr, table tbody tr { border-bottom: 1px #bbb solid; }
+        table tr tr { font-weight: 400; }
+        table thead tr { border-bottom: 0px #eb665b solid; }
+        table thead td, table thead th, table thead td p, table thead th p{ background-color: #eb665b; color:#fff!important; font-weight: 700;}
+        table tbody.zebraTable tr:nth-child(odd) { background-color: #eee; }
+        table.smallText {font-size: 12px!important; line-height: 19px!important; } 
+        table.smallText p {padding:0; margin:0; } 
+        .listLowerRoman {list-style-type: lower-roman;}
+        .listUpperRoman {list-style-type: upper-roman;}
+        .listLowerLatin {list-style-type: lower-latin;}
+        .listUpperLatin {list-style-type: upper-latin;}
+        .listNone {list-style-type: none;}
+        .iframeContent p.copyrightMeta { font-size: 12px; font-weight: 400; color: #333; line-height: 18px; margin: 30px 0 30px; }
+        .iframeContent .copyrightMeta a:link, .iframeContent .copyrightMeta a:visited, .iframeContent .copyrightMeta a:hover, .iframeContent .copyrightMeta a:active, .iframeContent .copyrightMeta a:focus { font-size: 12px; line-height: 18px;}
+        .iframeContent p.bibloReference { margin: 10px 0; padding-left: 40px; text-indent:-40px; }
+        @media (max-width:859px) {
+          .iframeWrapper { width: 100%;  }
+          .iframeContent { padding: 100px  40px 90px; } 
+          .iframeHeader h6 {  font-size: 22px; line-height: 22px;  }
+          .iframeAuthors {  display: block; margin-bottom: 60px; }
+          .iframeContent h1 { font-size: 26px; line-height: 32px; }
+          td, .iframeContent table td p { font-size:12px; line-height: 18px;;}
+        }
+        @media (max-width:640px) {
+          .iframeContent { padding: 100px 24px 90px; } 
+          .iframeContent blockquote { margin: 40px 0px 40px 20px; }
+          .iframeHeader h6 {  font-size: 18px; line-height: 18px;  }
+        }
+    </style> 
+
+</head>
+<body>
+  <div class="iframeHeader"><h6>Mammoth Word to HTML Demo</h6></div>
+    <div class="iframeWrapper">
+      <div class="iframeContent"><!-- END OF PAGE HEADER -->

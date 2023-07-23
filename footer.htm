@@ -1,0 +1,13 @@
+          <!-- START OF PAGE FOOTER -->
+          <div class="copyrightMetaFooter"></div>
+        </div><!-- / iframeContent -->
+    </div><!-- / iframeWrapper -->
+    <!-- Move copyright Info to base of page -->
+    <script> 
+    document.addEventListener("DOMContentLoaded", function() {
+      var source = document.querySelector(".copyrightMeta");
+      document.querySelector(".copyrightMetaFooter").appendChild(source);
+    });
+    </script>
+</body>
+</html>
