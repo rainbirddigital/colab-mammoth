@@ -33,6 +33,7 @@ The output HTML uses free open-source [Google Fonts](https://fonts.google.com)
 
 ### Tables
 A wrapper tag is automatically added around tables, which facilitates horizontal scrolling on small devices `<div class="tableWrap"><table>`Table Content`</table></div>` 
+
 The css additionally features other styles for table headers and striped rows. These must be added manually to the output HTML files: 
 * To add a table header. Wrap the table row in the following HTML `<thead><tr>`Table header content here`</tr></thead>`
 * To add a striped row effect. Wrap the table body in the following HTML `<tbody class="zebraTable"><tr>`Table body content here`</tr></tbody>`
