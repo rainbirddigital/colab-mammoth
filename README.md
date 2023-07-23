@@ -26,7 +26,7 @@ The copyright notice requires that a custom Word paragraph style `copyrightMeta`
 ### Tables
 Mammoth supports basic tables and merged table cells in both horizontal and vertical axis. Table headings should use the standard Word heading styles. Table captions should use the above `imageCaption` style. 
 
---
+----
 
 ## HTML Preparation and Output
 
@@ -57,7 +57,7 @@ Ordered lists that require special numbering formats, not `1. 2. 3. 4.`, require
 * `A. B. C.` = `<ol class="listUpperLatin><li>`List Here`</li></ol>`
 * `No bullets` = `<ol class="listNone><li>`List Here`</li></ol>`
 
--
+----
 
 ## The Colab Export Process
 Open the link below or copy the file `Mammoth.word-docx-to-html-github.ipynb` from the repository to your Google Drive and open in [Google Colab](https://colab.research.google.com). Follow the notebook instructions to complete the conversion process.
