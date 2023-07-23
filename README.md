@@ -49,7 +49,7 @@ Images are directly embedded into the html document. It is possible within Mammo
 Footnotes automatically appear at the base of the HTML file
 
 ### Ordered Lists
-Ordered lists that require special numbering formats, not `1. 2. 3. 4.`, require the manual addition of the following CSS styles to a lists `<ol>` tag:
+Ordered lists that require special numbering formats require the manual addition of the following CSS styles to a lists `<ol>` tag:
 * `1. 2. 3. 4.` is the default behavior of `<ol>`List Here`</ol>`
 * `i. ii. iii.` = `<ol class="listLowerRoman><li>`List Here`</li></ol>`
 * `I. II. III.` = `<ol class="listUpperRoman><li>`List Here`</li></ol>`
