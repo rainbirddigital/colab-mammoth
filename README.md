@@ -37,7 +37,7 @@ The css additionally features other styles for table headers and striped rows. T
 * To add a table header. Wrap the table row in the following HTML `<thead><tr>`Table header content here`</tr></thead>`
 * To add a striped row effect. Wrap the table body in the following HTML `<tbody class="zebraTable"><tr>`Table body content here`</tr></tbody>`
 
-#### Images   
+### Images   
 Images are directly embedded into the html document. It is possible within Mammoth to save them externally, refer to the full [documentation](https://github.com/mwilliamson/python-mammoth) for details.
 
 ### Footnotes   
