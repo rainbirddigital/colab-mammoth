@@ -32,7 +32,7 @@ Mammoth supports basic tables and merged table cells in both horizontal and vert
 
 This repository contains two files `header.htm` and `footer.htm` that can be adapted to alter the presentation of the output HTML files. The header file `header.htm` contains inline CSS that controls the layout, fonts, colors and text sizes of all elements, alongside some custom styles that can be applied manually to the exported files to improve the layouts. 
 
-### Fonts, colors and sizes
+### Fonts
 The output HTML uses free open-source [Google Fonts](https://fonts.google.com) 
 
 ### Tables
