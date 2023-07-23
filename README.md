@@ -1,4 +1,4 @@
-# Google Colab implementation of the Mammoth Word .docx to HTML converter
+# Google Colab implementation of Mammoth .docx to HTML converter
 
 [Mammoth](https://github.com/mwilliamson/python-mammoth) converts .docx documents into a semantic HTML. This [Google Colab](https://colab.research.google.com) implementation utilizes Mammoth and additionally adds a responsive header and footer to each of the exported HTMl files. This process requires some basic knowledge of Word or similar open-source alternatives such as [OnlyOffice](https://www.onlyoffice.com), HTML/CSS and a free [Google Drive](https://drive.google.com) account.
 
@@ -16,7 +16,7 @@ Blockquotes require that a custom Word paragraph style `Quote` is applied to tex
 Captions require that a custom Word paragraph style `imageCaption` is applied to text. This is then converted into the following HTML `<figcaption class="imageCaption">`Text Here`</figcaption>`
 
 ### Bibliography or References
-Biblographic elements require a custom Word paragraph style `bibloReference` to be applied to appropriate footer text, this creates an indented effect in the final document. Note the reference links themselves can convert unreliably within Mammoth, so they may need to be checked and added manually.
+Biblographic elements require a custom Word paragraph style `bibloReference` to be applied to appropriate footer text. This is converted into the following HTML `<p class="bibloReference">`Reference Text`</p>` and creates an indented effect in the final document. Note the reference links themselves can convert unreliably within Mammoth, so they may need to be checked and added manually. 
 
 ### Copyright Notice
 The copyright notice requires that a custom Word paragraph style `copyrightMeta` is applied to appropriate text. Javascript within the HTML file automatically moves this text to the base of the HTML file. The converted HTML appears in the following format `<div class="copyrightMetaFooter"><p class="copyrightMeta">`Text Here`</p></div>`
@@ -47,11 +47,11 @@ Footnotes automatically appear at the base of the HTML file
 ### Ordered Lists
 Ordered lists that require special numbering formats (Not 1, 2, 3), require the manual addition of the following CSS styles to the lists `<ol>` tag:
 * 1. 2. 3. 4. etc is the default behavior of <ol>
-* i. ii. iii. etc = `<ol class="listLowerRoman><li>etc</li></ul>`
-* I. II. III. etc = `<ol class="listUpperRoman><li>etc</li></ul>`
-* a. b. c. etc = `<ol class="listLowerLatin><li>etc</li></ul>`
-* A. B. C. etc = `<ol class="listUpperLatin><li>etc</li></ul>`
-* No bullets = `<ol class="listNone><li>etc</li></ul>`
+* i. ii. iii. etc = `<ol class="listLowerRoman><li>`List Content`</li></ul>`
+* I. II. III. etc = `<ol class="listUpperRoman><li>`List Content`</li></ul>`
+* a. b. c. etc = `<ol class="listLowerLatin><li>`List Content`</li></ul>`
+* A. B. C. etc = `<ol class="listUpperLatin><li>`List Content`</li></ul>`
+* No bullets = `<ol class="listNone><li>`List Content`</li></ul>`
 
 ## The Colab Export Process
 Open the link below or copy the file `Mammoth.word-docx-to-html-github.ipynb` from the repository to your Google Drive and open in [Google Colab](https://colab.research.google.com). Follow the notebook instructions to complete the conversion process.
