@@ -57,12 +57,6 @@ Ordered lists that require special numbering formats require the manual addition
 * `A. B. C.` = `<ol class="listUpperLatin><li>`List Here`</li></ol>`
 * `No bullets` = `<ol class="listNone><li>`List Here`</li></ol>`
 
-## Creating Custom Styles (Advanced)
-Follow this process to map new custom styles:
-* In the .docx file create a custom paragraph style, name it with a unique `customStyleName` and apply the style to text.
-* Open the Colab file and select the code immediately below `4. Convert .docx to .html`, within the editor, new styles can be declared below the comment `# Map custom styles here` Refer to the [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for style details.
-* Add CSS styles for the new element in the `header.htm` file.
-
 ---
 
 ## Google Colab Conversion and Export
@@ -70,5 +64,10 @@ Open the link below or copy the file `Mammoth.word-docx-to-html-github.ipynb` fr
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ma_-5nClXoDsH65vPX3eL0ERwcTezJFo?usp=sharing)
 
+---
 
-Map custom styles here
+## Creating Custom Styles (Advanced)
+Follow this process to map new custom styles:
+* In the .docx file create a custom paragraph style, name it with a unique `customStyleName` and apply the style to text.
+* Open the Colab file and select the code immediately below `4. Convert .docx to .html`, within the editor, new styles can be declared below the comment `# Map custom styles here` Refer to the [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for style details.
+* Add CSS styles for the new element in the `header.htm` file.
