@@ -1,4 +1,4 @@
-# Google Colab implementation of Mammoth .docx to HTML converter
+# Google Colab implementation of Mammoth Word .docx to HTML converter
 
 [Mammoth](https://github.com/mwilliamson/python-mammoth) converts .docx documents into a semantic HTML. This [Google Colab](https://colab.research.google.com) implementation utilizes Mammoth and additionally adds a responsive header and footer to each of the exported HTMl files. This process requires some basic knowledge of Word or similar open-source alternatives such as [OnlyOffice](https://www.onlyoffice.com), HTML/CSS and a free [Google Drive](https://drive.google.com) account.
 
