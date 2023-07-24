@@ -6,7 +6,7 @@
 
 ## Word .docx Preparation
 
-The structure of .docx and HTML are quite different, so only particular Word paragraph and character styles can be converted by default. The demo file `mammoth-demo.docx` included in this repository utilizes some core Word styles and a number of custom styles for block quotes, captions and so forth. Refer to the full [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for details on how Mammoth can be further customised. 
+The structure of .docx and HTML are quite different, so only particular Word paragraph styles can be converted by default. The demo file `mammoth-demo.docx` included in this repository utilizes some core Word styles and a number of custom styles for block quotes, captions and so forth. Refer to the full [Mammoth documentation](https://github.com/mwilliamson/python-mammoth) for details on how Mammoth can be further customised. 
 
 ### Core .docx styles
 The following default Word styles are automatically converted into HTML equivalents: Headings 1 to 6, Paragraphs, Line breaks, Lists, Hyperlinks, Tables, Footnotes and Text styles including Bold, Italic, Underline, Strikethrough, Superscript, Subscript.  
