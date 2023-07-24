@@ -21,7 +21,7 @@ Captions require that a custom Word paragraph style `imageCaption` is applied to
 Biblographic elements require a custom Word paragraph style `bibloReference` to be applied to appropriate footer text. This is converted into the following HTML `<p class="bibloReference">`Reference Text`</p>` and creates an indented effect in the final document. Note the reference links themselves can convert unreliably within Mammoth, so they may need to be checked and added manually. 
 
 ### Copyright Notice
-The copyright notice requires that a custom Word paragraph style `copyrightMeta` is applied to appropriate text. Javascript within the HTML file `footer.htm` automatically moves this text to the base of the HTML file. The converted HTML appears in the following format `<div class="copyrightMetaFooter"><p class="copyrightMeta">`Text Here`</p></div>`
+The copyright notice requires that a custom Word paragraph style `copyrightMeta` is applied to appropriate text. Javascript within the HTML file `footer.htm` automatically moves this text to the base of the exported HTML file. The converted HTML appears in the following format `<div class="copyrightMetaFooter"><p class="copyrightMeta">`Text Here`</p></div>`
 
 ### Tables
 Mammoth supports basic tables and merged table cells in both horizontal and vertical axis. Table headings should use the standard Word heading styles. Table captions should use the above `imageCaption` style. 
